@@ -203,17 +203,21 @@ div.button {
   font-size: 30px;
   letter-spacing: 1px;
   text-align: center;
-  color: rgba(0,0,0,0.8);
-  background: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.8);
+  background: rgba(0,0,0,0.8);
   mix-blend-mode: luminosity;
   padding: 10px;
   border-radius: 10px;
   transition: all 0.3s ease-in-out 0s;
+  outline: 2px solid white;
+  outline-offset: -5px;
 }
 div.button:hover {
-  background: white;
+  /* background: white; */
   letter-spacing: 2px;
+  text-shadow: 0 0 5px white;
   box-shadow: 0 0 5px white;
+  outline-offset: 0px;
   cursor: pointer;
   transition: all 0.3s ease-in-out 0s;
 }
